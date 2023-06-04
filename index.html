@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Card/card.style.css">
+    <link rel="stylesheet" href="./SearchBar/searchBar.style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/pinterest_logo.png">
+    <title>Pinterest</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid menu">
+
+        <!--Icono Pinterest-->
+        <a class="navbar-brand" href="#"><img class="logo" draggable="false" src="img/pinterest_logo.png"></a>
+
+        <!--Botones Inicio, Hoy, Dropdown Crear-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item btn-inicio">
+              <button class="nav-link" style="color: white;" href="#">Inicio</button>
+            </li>
+            <li class="nav-item btn-hoy">
+              <a class="nav-link" style="color: black;" href="#">Hoy</a>
+            </li>
+            <li class="nav-item dropdown btn-hoy">
+              <a class="nav-link dropdown-toggle" style="color: black;" href="#" data-bs-toggle="dropdown">Crear</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" style="color: black; font-weight: 500;" href="#">Crear idea pin</a></li>
+                <li><a class="dropdown-item" style="color: black; font-weight: 500;" href="#">Crear pin</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <!--Barra de busqueda-->
+          <div class="dropdown stylebar" style="width: 100%;">
+            <input type="search" class="search-bar dropdown" placeholder="Search" data-bs-toggle="dropdown" aria-label="Search" style="float: left;background-image: url('img/lupa_icon.png');background-repeat: no-repeat;">
+            <ul class="dropdown-menu">
+              <br>
+
+              <span class="texto-separador-sb">Búsquedas recientes</span>
+              <div class="container text-center" style="margin: 0px;">
+                <section id="tags-margin" class="row row-cols-auto">
+                  <a type="button" class="col search-tag">san valentin <img src="img/close_icon.svg" width="25"></a>
+                  <a type="button" class="col search-tag">tienda en línea <img src="img/close_icon.svg" width="25"></a>
+                  <a type="button" class="col search-tag">día de la madre <img src="img/close_icon.svg" width="25"></a>
+                  <a type="button" class="col search-tag">fotos de girsoles <img src="img/close_icon.svg" width="25"></a>
+                  <a type="button" class="col search-tag">One Piece <img src="img/close_icon.svg" width="25"></a>
+                </section>
+              </div>
+              <br>
+
+              <span class="texto-separador-sb">Ideas para ti</span>
+              <div class="container text-center" style="margin: 0px;">
+                <section id="tags-col" class="row">
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/1.jpg" width="200"><div class="txt-centrado">Fondo gótico</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/2.jpg" width="200"><div class="txt-centrado">Arte punk</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/3.jpg" width="200"><div class="txt-centrado">Dibujo manga</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/4.jpg" width="200"><div class="txt-centrado">Citas de libros</div></div>
+                </section>
+                <section id="tags-col" class="row">
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/5.jpg" width="200"><div class="txt-centrado">Feliz cumpleaños</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/6.jpg" width="200"><div class="txt-centrado">Frases sentimentales</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/7.jpg" width="200"><div class="txt-centrado">Dibujos sencillos</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/8.jpg" width="200"><div class="txt-centrado">Mensajes de amor</div></div>
+                </section>
+              </div>
+              <br>
+
+              <span class="texto-separador-sb">Popular en Pinterest</span>
+              <div class="container text-center" style="margin: 0px;">
+                <section id="tags-col" class="row">
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/9.jpg" width="200"><div class="txt-centrado">One Piece</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/10.jpg" width="200"><div class="txt-centrado">Minimalismo</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/11.jpg" width="200"><div class="txt-centrado">Chainsaw man</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/12.jpg" width="200"><div class="txt-centrado">Fotos de pareja</div></div>
+                </section>
+                <section id="tags-col" class="row">
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/13.jpg" width="200"><div class="txt-centrado">Mario Bros</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/14.jpg" width="200"><div class="txt-centrado">Forest trees</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/15.jpg" width="200"><div class="txt-centrado">Capibaras</div></div>
+                  <div id="img-col"><img class="col" src="img/searchbar_imgs/16.jpg" width="200"><div class="txt-centrado">Holidays</div></div>
+                </section>
+              </div>
+              <br>
+            </ul>
+          </div>
+
+          <!--Iconos campana, mensaje, perfil, downwards-->
+          <div class="icon-container">
+            <img draggable="false" class="icon bell" src="img/bell_icon.png">
+            <img draggable="false" class="icon message" src="img/message_icon.png">
+            <img draggable="false" class="icon pp" src="img/avatar.png">
+            
+            <!--Dropdown final-->
+            <div class="icon-container">
+              <button type="button" class="btn dropdown stylebtn" data-bs-toggle="dropdown"><img src="img/downward_icon.png" width="19"></button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <span class="texto-separador">Actualmente en</span>
+                <li>
+                  <section class="card-user">
+                    <div class="card-userImage">
+                      <img src="img/avatar.png">
+                    </div>
+                    <div class="card-userInfo">
+                      <span>Rudy Lemus</span>
+                      <span>Personal</span>
+                      <span>antonio.lemus10@outlook.com</span>
+                    </div>
+                  </section>
+                </li>
+                <br>
+                <span class="texto-separador">Tus Cuentas</span>
+                <li><a class="bt-lista" type="button">Añadir cuenta</a></li>
+                <li><a class="bt-lista" type="button">Convertir en cuenta para empresas</a></li>
+                <br>
+                <span class="texto-separador">Más opciones</span>
+                <li><a class="bt-lista" type="button">Ajustes</a></li>
+                <li><a class="bt-lista" type="button">Administrar feed de inicio</a></li>
+                <li><a class="bt-lista" type="button">Instala la apicación Windows</a></li>
+                <li><a class="bt-lista" type="button">Tus derechos de privacidad</a></li>
+                <li><a class="bt-lista" type="button">Obtener ayuda<img src="img/arrow_icon.svg" width="23" style="margin-left: 130px;"></a></li>
+                <li><a class="bt-lista" type="button">Ver Términos del servicio<img src="img/arrow_icon.svg" width="23" style="margin-left: 56px;"></a></li>
+                <li><a class="bt-lista" type="button">Ver Política de privacidad<img src="img/arrow_icon.svg" width="23" style="margin-left: 54px;"></a></li>
+                <li><a class="bt-lista" type="button">Valora la versión beta<img src="img/arrow_icon.svg" width="23" style="margin-left: 80px;"></a></li>
+                <li><a class="bt-lista" type="button">Cerrar Sesión</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Boton flotante inferior-->
+  <div class="el-boton-pregunta">
+    <button type="button" class="btn dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+      <img draggable="false" src="img/question_icon.svg" width="32">
+    </button>
+    <ul class="dropdown-menu">
+      <li class="borderfix"><a id="btn-footer" class="dropdown-item" type="button">Visita el Centro de asistencia<img src="img/arrow_icon.svg" width="23" style="margin-left: 85px;"></a></li>
+      <li class="borderfix"><a id="btn-footer" class="dropdown-item" type="button">Crear widget<img src="img/arrow_icon.svg" width="23" style="margin-left: 200px;"></a></li>
+      <li><hr class="dropdown-divider"></li>
+      <li>
+        <section class="footer-sec">
+          <a href="">info</a><a href="">Blog</a><a href="">Empresas</a><a href="">Empleos</a><a href="">Desarrolladores</a>
+        </section>
+        <section class="footer-sec">
+          <a href="">Eliminaciones</a><a href="">Política de privacidad</a>
+        </section>
+        <section class="footer-sec">
+          <a href="">Anuncios personalizados</a>
+        </section>
+        <section class="footer-sec">
+          <a href="">Derechos de privacidad</a><a href="">Condiciones</a>
+        </section>
+      </li>
+    </ul>
+  </div>
+
+  <!--Tarjetas-->
+  <div class="grid-container" >
+    <div id="contenedorimg">
+        </div>    
+    </div>
+  </div>
+  
+</body>
+
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script src="script.js"></script>
+  <script src="./Card/card.script.js"></script>
+  <script src="./SearchBar/searchBar.script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+  </html>

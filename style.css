@@ -1,0 +1,67 @@
+/*Boton flotante inferior*/
+.el-boton-pregunta {
+    background-color: white;
+    position:fixed;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.15);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    right: 25px;
+    bottom: 25px;
+    z-index: 1;
+}
+
+.el-boton-pregunta button {
+    border-style: none;
+}
+
+.el-boton-pregunta .dropdown-menu.show {
+    border-style: none;
+    border-radius: 17px;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+}
+
+/*Contenido de footer*/
+.borderfix {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#btn-footer {
+    display: flex;
+    font-size: 16px;
+    color: #111111;
+    font-weight: 500;
+    padding: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  #btn-footer:hover{
+    background-color:#eeeeee;
+  }
+
+.footer-sec {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    border-radius: 8px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.footer-sec a {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 6px;
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+.footer-sec a:hover {
+    text-decoration: underline;
+    color: #5A5A5A;
+}

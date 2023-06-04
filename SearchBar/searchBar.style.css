@@ -1,0 +1,266 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-family:arial;
+}
+
+/*ajuste navbar general*/
+.menu {
+  max-width:100%;
+  display:flex;
+  padding: 5px;
+  align-items:center;
+  font-weight:500;
+}
+
+/*ajustar botones*/
+.menu .logo{
+  width:46px;
+  padding:11px;
+  cursor:pointer;
+  border-radius:50%;
+  margin-right: -15px;
+}
+
+.menu .logo:hover{
+  background:#eeeeee;
+}
+
+.btn-inicio{
+  background:#000000;
+  padding:4px 10px;
+  cursor:pointer;
+  border-radius:40px;
+  text-decoration: none;
+}
+
+.btn-hoy{
+  padding:4px 7px;
+  cursor:pointer;
+  border-radius:40px;
+  text-decoration: none;
+  margin-left: 0px;
+}
+/*ajustes de searchbar*/
+.menu .search-bar{
+  width:100%;
+  margin:0px 5px;
+  padding:12px 35px;
+  border-radius:40px;
+  outline:none;
+  position:relative;
+  background-color:#efefef;
+  font-size:15px;
+  background-image: url(img/lupa_icon.png);
+  background-size:22px;
+  background-repeat:no-repeat;
+  background-position:center left;
+  background-position:10px;
+  color:gray;
+  border:4px solid transparent;
+}
+
+.menu .search-bar:hover{
+  background-color:#3333;
+}
+
+.menu .search-bar:focus{
+  border:4px solid #7bb5f0;
+  padding:12px 20px;
+  background-image:none;
+}
+
+/*ajustes contenido dropdown de searchar*/
+.stylebar .dropdown-menu.show {
+  width: 100%;
+  border-style: none;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.1);
+}
+
+
+.texto-separador-sb {
+  font-size: 16px;
+  font-weight:400;
+	color: #333333;
+  margin-left: 20px;
+}
+
+.search-tag {
+  background-color: #E9E9E9;
+  border-radius: 30px;
+  margin: 5px;
+  padding: 6px;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 400;
+}
+
+.search-tag:hover{
+  background-color: #DADADA;
+}
+
+#tags-margin {
+  margin-left: 5px;
+  margin-top: 6px;
+}
+
+#tags-margin img {
+  border-radius: 50%;
+  padding: 2px;
+}
+
+#tags-margin img:hover{
+  background-color: #CDCDCD;
+}
+
+/*ajustes seccion tarjetas */
+#img-col {
+  width: 200px;
+  height: 85px;
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 5px;
+  background-color: #000000;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+#tags-col {
+  margin-left: 5px;
+  margin-top: 1px;
+}
+
+#tags-col img {
+  margin-left: -12px;
+  opacity: 0.65;
+}
+
+#tags-col img:hover {
+  background-color: #000000;
+  opacity: 0.35;
+}
+
+.txt-centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  width: 150px;
+  
+}
+
+/*ajustes boton campana, mensaje, perfil*/
+.icon-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+}
+
+.icon-container .icon{
+  width:50px;
+  border-radius:50%;
+  cursor:pointer;
+  padding:10px;
+}
+
+.icon-container .icon:hover{
+  background-color:#eeeeee;
+}
+
+.icon-container .stylebtn {
+  width: 30px;
+  height: 30px;
+  border-radius:50%;
+  padding:0px;
+  border-style: none;
+}
+
+.icon-container .stylebtn:hover{
+  background-color:#eeeeee;
+}
+
+.icon-container .dropdown-menu.show {
+  border-style: none;
+  border-radius: 17px;
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.10);
+}
+
+/*ajustes contenido ultimo dropdown*/
+.texto-separador {
+  font-size: 12px;
+  font-weight:400;
+	color: #111111;
+  margin-left: 10px;
+}
+
+.card-user {
+	display: flex;
+	flex-direction: row;
+  padding: 5px;
+	align-items: center;
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-user:hover{
+  background-color:#eeeeee;
+}
+
+.card-userImage {
+	width: 60px;
+	height: 63px;
+	border-radius:50%;
+}
+
+.card-userImage img {
+	width: 100%;
+	height: 100%;
+}
+
+.card-userInfo {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10px;
+}
+
+.card-userInfo span:nth-child(1) {
+	font-size: 16px;
+  font-weight:600;
+	color: #111111;
+}
+
+.card-userInfo span:nth-child(2) {
+	color: #5F5F5F;
+	font-size: 14px;
+  font-weight:400;
+	margin-top: 2px;
+}
+
+.card-userInfo span:nth-child(3) {
+	color: #5F5F5F;
+	font-size: 14px;
+  font-weight:400;
+}
+
+.bt-lista {
+  display: flex;
+  font-size: 16px;
+  color: #111111;
+  font-weight: 500;
+  padding: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.bt-lista:hover{
+  background-color:#eeeeee;
+}
